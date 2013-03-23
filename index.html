@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <style>
+    stop.begin { stop-color:yellow; }
+    stop.end { stop-color:green; }
+    body.invalid stop.end { stop-color:red; }
+    #err { display:none; }
+    body.invalid #err { display:inline; }
+  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Github</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/slides.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jcloud.js"></script>
+  </head>
+    <body class="impress-not-supported">
+
+    <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+      <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+      <!-- Show an overview of the presentation -->
+      <div id="my-overview" class="step" data-x="0" data-y="0" data-scale="12">
+      </div>
+
+      <div id="mobile1" class="step section" data-x="2953" data-y="-327" data-scale="3">
+    		<h2>VCS -> GitHub</h2>
+      </div>
+
+      <div id="mobile2" class="step slide" data-x="1963" data-y="-477" data-scale="0.6">
+        <h2>What is a VCS?</h2>
+          <div style="padding: 2.5em; width: 70%">
+            <img src="images/simple.png"  width="100%"/>
+          </div>
+      </div>
+
+      <div id="mobile3" class="step slide" data-x="2623" data-y="-477" data-scale="0.6">
+        <h2>Why?</h2>
+          <div style="padding: 2.5em; width: 70%">
+            <img src="images/history.png"  width="100%"/>
+          </div>
+      </div>
+
+      <div id="mobile4" class="step slide" data-x="3283" data-y="-477" data-scale="0.6">
+        <h2>VCS - DVCS</h2>
+          <div style="float: left; display: inline-block; padding-top: 1em;width: 50%">
+            <img src="images/centralized-vcs.gif"  width="100%"/>
+          </div>
+          <div style="float:right;width:45%;text-align:right;padding-top: 1em; display:inline-block;">
+            <img src="images/distributed-vcs.gif"  width="100%"/>
+          </div>
+      </div>
+    
+    <div id="mobile5" class="step slide" data-x="3943" data-y="-477" data-scale="0.6">
+        <h2>Differences</h2>
+          <div style="padding: 2.5em; width: 70%">
+            <img src="images/process.png"  width="100%"/>
+          </div>
+    </div>
+      
+    <div id="mobile6" class="step slide" data-x="3943" data-y="3" data-scale="0.6">
+        <h2>Set-up Git</h2>
+          <div style="float:left"><br/>
+            <a href="http://code.google.com/p/git-osx-installer/downloads/list?can=3" style="font-size:20px;">http://code.google.com/p/git-osx-installer/downloads/list?can=3</a>
+          </br>
+            <a href='http://code.google.com/p/msysgit/downloads/list?can=3' style="font-size:20px;">http://code.google.com/p/msysgit/downloads/list?can=3</a>
+          </br>
+            Linux , yum apt-get...  git
+          </div>
+    </div>
+
+      <div id="mobile7" class="step slide" data-x="3943" data-y="483" data-scale="0.6">
+        <h2>GitHub</h2>
+        <img style="display:block;margin-left:auto;margin-right:auto; padding-top:1em;" src="images/github.jpg" width="50%"/> 
+        <a href='http://github.com' style="font-size:20px;">http://github.com</a>
+      </div>
+
+      <div id="mobile8" class="step slide" data-x="3283" data-y="483" data-scale="0.6">
+        <h2>Learn Git Hub</h2>
+        <img style="display:block;margin-left:auto;margin-right:auto; padding-top:1em;" src="images/learn.jpg" width="50%"/> 
+        <a href='http://try.github.com' style="font-size:20px;">http://try.github.com</a>
+      </div>
+
+
+
+    <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+(function () {
+  function enhance (element) {
+    var txt = element.querySelector('code');
+    var canvas = element.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+    eval(txt.innerHTML);
+  }
+  var demos = document.querySelectorAll('.livedemo');
+  for (var i = 0; i < demos.length; i++) {
+    enhance(demos.item(i));
+  }
+})();
+    </script>
+    <script src="js/prism.js"></script>
+    <script>
+      if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+    </script>
+    <script src="js/prism.js"></script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+    <script>
+    var settings = {
+        "size" : {
+            "grid" : 22,
+            "factor" : 0, // font resize factor, 0 means automatic
+            "normalize" : true // reduces outliers for more attractive output
+        },
+        "options" : {
+            "color" : "random-dark",
+            "printMultiplier" : 1,
+            "rotationRatio" : 0, // 0 is all horizontal, 1 is all vertical
+            "printMultiplier" : 3 // set to 3 for nice printer output; higher numbers take longer
+        },
+        "shape" : "square"
+    };
+    $("#wordcloud").awesomeCloud( settings );
+    </script>
+  </body>
+</html>

@@ -1,4 +1,6 @@
-github
-======
+# Presentation for DevFestW
 
-Github
+## Slides
+
+Made using [impress.js](http://bartaz.github.com/impress.js/).
+
