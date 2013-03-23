@@ -1,4 +1,4 @@
-# Presentation for DevFestW
+# Presentation OpenCoffee JS Training
 
 ## Slides
 
